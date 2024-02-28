@@ -8,10 +8,12 @@ app.use(bodyParser.urlencoded({extended:false}))
 
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
+const errRoutes = require('./routes/404');
 
 
 app.use(adminRoutes);
 app.use(shopRoutes);
+app.use(errRoutes);
 
 
 
